@@ -6,10 +6,8 @@ function makeGreen() {
 //type 3: handle purple btn click by setting function name
 const PurpleBtn = document.getElementById("make-purple");
 //console.log(PurpleBtn);
-
 // just set the name of the function
 PurpleBtn.onclick = makePurple;
-
 function makePurple() {
   document.body.style.backgroundColor = "purple";
 }
@@ -24,3 +22,21 @@ const grayBtn = document.getElementById("make-gray");
 grayBtn.onclick = function () {
   document.body.style.backgroundColor = "gray";
 };
+
+
+//type 5: handle by using add eventlisenter
+const yellowBtn = document.getElementById("make-yellow");
+//console.log(yellowBtn);
+yellowBtn.addEventListener("click", makeYellow);
+
+function makeYellow() {
+  document.body.style.backgroundColor = "yellow";
+}
+
+// type: 6 
+document.getElementById("make-coral").addEventListener("click", function makecoral() {
+    document.body.style.backgroundColor = "coral";
+});
+//console.log(pinkBtn);
+
+

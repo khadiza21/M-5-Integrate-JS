@@ -26,9 +26,19 @@
 
     <!-- type 5  -->
     <button id="make-yellow">Make yellow</button>
+    <!-- type 6  -->
+    <button id="make-pink">Make Pink</button>
+    <!-- type 7 -->
+    <button id="make-coral">Make Coral</button>
 
     <script>
-        const makeYellow = document.getElementById('make-yellow');
+
+        const pinkBtn = document.getElementById("make-pink");
+        console.log(pinkBtn);
+        pinkBtn.addEventListener("click", function makepink() {
+            document.body.style.backgroundColor = "pink";
+        });
+
     </script>
 
 
