@@ -12,11 +12,13 @@
 <body>
     <h1>Change color</h1>
 
-    <!-- direct styling add onclick  inline-->
+    <!-- direct styling add onclick  inline  -->
+    <!-- type 1 -->
     <button onclick="document.body.style.color = 'red'">Make Red</button>
 
 
     <!-- onclick handler directly via js internal -->
+    <!-- type 2 -->
     <button onclick="makeYellow()">Make Yellow</button>
     <script>
         function makeYellow() {
@@ -24,19 +26,17 @@
         }
     </script>
 
-    <button id="make-purple">Make Purple</button>
-    <script>
-        const PurpleBtn = document.getElementById('make-purple');
-        console.log(PurpleBtn);
-
-        // just set the name of the function 
-        PurpleBtn.onclick = 
-    </script>
 
 
     <!-- external-->
     <button onclick="makeGreen()">Make Green</button>
+
+    <!-- type 3  -->
+    <button id="make-purple">Make Purple</button>
     <script src="js/2-event.js"></script>
+
+
+
 
 
 
