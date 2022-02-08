@@ -23,7 +23,6 @@ grayBtn.onclick = function () {
   document.body.style.backgroundColor = "gray";
 };
 
-
 //type 5: handle by using add eventlisenter
 const yellowBtn = document.getElementById("make-yellow");
 //console.log(yellowBtn);
@@ -33,10 +32,10 @@ function makeYellow() {
   document.body.style.backgroundColor = "yellow";
 }
 
-// type: 6 
-document.getElementById("make-coral").addEventListener("click", function makecoral() {
+// type: 6
+document
+  .getElementById("make-coral")
+  .addEventListener("click", function makecoral() {
     document.body.style.backgroundColor = "coral";
-});
+  });
 //console.log(pinkBtn);
-
-

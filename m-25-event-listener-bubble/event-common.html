@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <p id="clicking-method">Without Face, Money, Power</p>
+        <button onclick="handleJustFunctionClick()">See More</button>
+        <button id="handle-event">Direct add event listerner</button>
+    </section>
+
+
+    <script>
+        function handleJustFunctionClick() {
+            const p = document.getElementById('clicking-method');
+            p.innerText = 'Without Face, Money, Power You have no value in bad socitey!';
+        }
+        //direct
+        document.getElementById('handle-event').addEventListener('click', function () {
+            const p = document.getElementById('clicking-method');
+            p.innerText = 'Without Face, Money, Power You have no value in bad socitey!!';
+        });
+    </script>
+</body>
+
+</html>
